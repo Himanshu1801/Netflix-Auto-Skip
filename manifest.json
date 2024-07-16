@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Netflix Auto-Skip",
+  "version": "1.0",
+  "description": "Automatically clicks the 'Skip Intro' and 'Next Episode' buttons on Netflix.",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.netflix.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
